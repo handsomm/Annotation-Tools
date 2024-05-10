@@ -1,0 +1,27 @@
+{
+  "name": "annotation-tools",
+  "version": "0.0.2",
+  "description": "Package for drawing annotation tools.",
+  "main": "./dist/index.js",
+  "type": "module",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup"
+  },
+  "keywords": [
+    "Drawing",
+    "Annotation",
+    "Drawing tools",
+    "Annotation tools",
+    "Canvas drawing"
+  ],
+  "author": "Soumya Ranjan Behera",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
