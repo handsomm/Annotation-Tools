@@ -7,8 +7,11 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup"
+    "dev": "vitest",
+    "test": "vitest run",
+    "build": "tsup",
+    "lint": "tsc",
+    "ci": "pnpm run lint && pnpm run test && pnpm run build"
   },
   "keywords": [
     "Drawing",
@@ -22,6 +25,7 @@
   "devDependencies": {
     "@types/node": "^20.12.11",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
   }
 }
